@@ -1,135 +1,270 @@
-# Turborepo starter
+# Gtalla - Modern Application Platform
 
-This Turborepo starter is maintained by the Turborepo core team.
+Gtalla is a comprehensive, modern application platform built with a monorepo architecture using Turborepo. It provides a scalable foundation for building and deploying applications across multiple platforms.
 
-## Using this example
+## 🚀 Quick Start
 
-Run the following command:
+### Prerequisites
 
-```sh
-npx create-turbo@latest
+- Node.js 18+
+- pnpm (recommended) or npm
+- Git
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/gtalla/gtalla.git
+cd gtalla
+
+# Install dependencies
+pnpm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your configuration
+
+# Start development servers
+pnpm dev
 ```
 
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+## 📁 Project Structure
 
 ```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
+gtalla/
+├── apps/                    # Applications
+│   ├── graphql/            # GraphQL API server
+│   ├── mobile/             # React Native mobile app
+│   ├── portal/             # Admin portal (Next.js)
+│   ├── rest/               # REST API server
+│   └── site/               # Public website (Next.js)
+├── packages/               # Shared packages
+│   ├── business-logic/     # Core business logic
+│   ├── cli/               # Command line tools
+│   ├── constant-definitions/ # Shared constants
+│   ├── contracts/         # API contracts and types
+│   ├── core-modules/      # Core functionality modules
+│   ├── data-sources/      # Data access layer
+│   ├── design-system/     # UI component library
+│   ├── eslint-config/     # ESLint configurations
+│   ├── sdk/               # Client SDK
+│   ├── tools/             # Development tools
+│   ├── typescript-config/ # TypeScript configurations
+│   └── ui/                # Shared UI components
+├── infrastructure/        # Infrastructure as Code
+│   ├── k8s/              # Kubernetes manifests
+│   └── terraform/        # Terraform configurations
+├── lambdas/              # AWS Lambda functions
+├── docs/                 # Documentation
+└── RUNBOOKS/            # Operational runbooks
 ```
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+## 🏗️ Architecture
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
+### Applications
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
+- **GraphQL API**: Apollo Server with TypeScript
+- **REST API**: Express.js with TypeScript
+- **Portal**: Next.js admin interface
+- **Site**: Next.js public website
+- **Mobile**: React Native application
 
-### Develop
+### Shared Packages
 
-To develop all apps and packages, run the following command:
+- **Business Logic**: Core domain logic and business rules
+- **Design System**: Consistent UI components and design tokens
+- **SDK**: Client libraries for API integration
+- **Contracts**: Type-safe API contracts and interfaces
 
-```
-cd my-turborepo
+## 🛠️ Development
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
+### Available Scripts
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
-```
+```bash
+# Development
+pnpm dev              # Start all development servers
+pnpm dev:web          # Start web applications only
+pnpm dev:api          # Start API servers only
+pnpm dev:mobile       # Start mobile development
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+# Building
+pnpm build            # Build all applications and packages
+pnpm build:web        # Build web applications
+pnpm build:api        # Build API servers
+pnpm build:mobile     # Build mobile app
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+# Testing
+pnpm test             # Run all tests
+pnpm test:unit        # Run unit tests
+pnpm test:integration # Run integration tests
+pnpm test:e2e         # Run end-to-end tests
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
-```
+# Linting and Formatting
+pnpm lint             # Lint all code
+pnpm lint:fix         # Fix linting issues
+pnpm format           # Format all code
+pnpm type-check       # Run TypeScript type checking
 
-### Remote Caching
+# Database
+pnpm db:migrate       # Run database migrations
+pnpm db:seed          # Seed database with test data
+pnpm db:reset         # Reset database
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
+# Deployment
+pnpm deploy:staging   # Deploy to staging
+pnpm deploy:prod      # Deploy to production
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+### Environment Setup
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+1. **Copy environment template**:
 
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. **Configure environment variables**:
+   - Database connections
+   - API keys and secrets
+   - External service URLs
+   - Feature flags
+
+3. **Set up local development**:
+
+   ```bash
+   # Start required services
+   docker-compose up -d postgres redis
+
+   # Run migrations
+   pnpm db:migrate
+
+   # Seed data
+   pnpm db:seed
+   ```
+
+### Code Quality
+
+- **ESLint**: Code linting with custom configurations
+- **Prettier**: Code formatting
+- **TypeScript**: Static type checking
+- **Husky**: Git hooks for pre-commit checks
+- **Jest**: Unit and integration testing
+- **Playwright**: End-to-end testing
+
+## 🚀 Deployment
+
+### Staging Deployment
+
+```bash
+pnpm deploy:staging
 ```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
+### Production Deployment
+
+```bash
+pnpm deploy:prod
 ```
 
-## Useful Links
+### Infrastructure
 
-Learn more about the power of Turborepo:
+- **Kubernetes**: Container orchestration
+- **Terraform**: Infrastructure as Code
+- **AWS**: Cloud infrastructure
+- **Docker**: Containerization
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+## 📚 Documentation
+
+- [Architecture Guide](docs/ARCHITECTURE.md)
+- [API Documentation](docs/API.md)
+- [Development Guide](docs/DEVELOPMENT.md)
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+
+## 🔧 Configuration
+
+### Turborepo Configuration
+
+The project uses Turborepo for build orchestration and caching. Configuration is in `turbo.json`.
+
+### Package Manager
+
+We use pnpm for its efficient dependency management and workspace features.
+
+### TypeScript
+
+Shared TypeScript configurations are in `packages/typescript-config/`.
+
+## 🧪 Testing
+
+### Test Structure
+
+- **Unit Tests**: Individual function and component tests
+- **Integration Tests**: API and database integration tests
+- **E2E Tests**: Full application workflow tests
+- **Visual Regression Tests**: UI component visual tests
+
+### Running Tests
+
+```bash
+# All tests
+pnpm test
+
+# Specific test types
+pnpm test:unit
+pnpm test:integration
+pnpm test:e2e
+
+# With coverage
+pnpm test:coverage
+
+# Watch mode
+pnpm test:watch
+```
+
+## 🔒 Security
+
+- **Dependency Scanning**: Automated vulnerability scanning
+- **Code Analysis**: Static analysis for security issues
+- **Access Control**: Role-based access control
+- **Data Encryption**: Encryption at rest and in transit
+- **Security Headers**: Comprehensive security headers
+
+See [SECURITY.md](SECURITY.md) for detailed security information.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Workflow
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
+
+### Code Standards
+
+- Follow TypeScript best practices
+- Write comprehensive tests
+- Update documentation
+- Follow our coding standards
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Documentation**: [docs.gtalla.com](https://docs.gtalla.com)
+- **Issues**: [GitHub Issues](https://github.com/gtalla/gtalla/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/gtalla/gtalla/discussions)
+- **Email**: support@gtalla.com
+
+## 🏢 About Gtalla
+
+Gtalla is a modern application platform designed for scalability, maintainability, and developer productivity. Our mission is to provide the best tools and practices for building robust applications.
+
+---
+
+**Built with ❤️ by the Gtalla Team**

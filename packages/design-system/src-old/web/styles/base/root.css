@@ -1,0 +1,76 @@
+:root {
+  --dse-body-text-color: #333333;
+  --dse-body-bg-color: #ffffff;
+  --dse-btn-primary-color: #ffffff;
+  --dse-btn-primary-bg: #4caf50;
+  --dse-btn-primary-bg-hover: #45a049;
+  --dse-btn-secondary-color: #ffffff;
+  --dse-btn-secondary-bg: #333333;
+  --dse-form-color: #333333;
+  --dse-form-bg: #ffffff;
+  --dse-form-error-color: #f44336;
+  --dse-form-error-border: #f44336;
+  --dse-form-border-focus-color: #4caf50;
+  --dse-body-font-size: 16px;
+  --dse-body-font-weight: 400;
+  --dse-h1-font-size: 2.5rem;
+  --dse-h2-font-size: 2rem;
+  --dse-h3-font-size: 1.75rem;
+  --dse-h4-font-size: 1.5rem;
+  --dse-h5-font-size: 1.25rem;
+  --dse-h6-font-size: 1rem;
+  --dse-h1-font-weight: 500;
+  --dse-h2-font-weight: 500;
+  --dse-h3-font-weight: 500;
+  --dse-h4-font-weight: 400;
+  --dse-h5-font-weight: 400;
+  --dse-h6-font-weight: 300;
+  --color-grey-0: #fff;
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
+  --color-grey-200: #e5e7eb;
+  --color-grey-300: #d1d5db;
+  --color-grey-400: #9ca3af;
+  --color-grey-500: #6b7280;
+  --color-grey-600: #4b5563;
+  --color-grey-700: #374151;
+  --color-grey-800: #1f2937;
+  --color-grey-900: #111827;
+
+  --color-blue-100: #e0f2fe;
+  --color-blue-700: #0369a1;
+  --color-green-100: #dcfce7;
+  --color-green-700: #15803d;
+  --color-yellow-100: #fef9c3;
+  --color-yellow-700: #a16207;
+  --color-silver-100: #e5e7eb;
+  --color-silver-700: #374151;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-700: #4338ca;
+
+  --color-red-100: #fee2e2;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+
+  --backdrop-color: rgba(255, 255, 255, 0.1);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+
+  --image-grayscale: 0;
+  --image-opacity: 100%;
+
+  --border-radius-tiny: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 7px;
+  --border-radius-lg: 9px;
+  --bg-main: #f9fafb;
+  --bg-second: #fff;
+  --font: 'Poppins', sans-serif;
+  --title-color: #1e1f22;
+  --main-color: #101010;
+  --second-color: #1971ea;
+
+  --color-grey-700: #374151;
+}

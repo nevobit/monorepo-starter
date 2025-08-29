@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@repo/business-logic": ["../../packages/business-logic/src/index.ts"],
+      "@repo/contracts": ["../../packages/contracts/src/index.ts"],
+      "@repo/security": ["../../packages/security/src/index.ts"],
+      "@repo/core-modules": ["../../packages/core-modules/src/index.ts"],
+      "@repo/constant-definitions": ["../../packages/constant-definitions/src/index.ts"],
+      "@repo/data-sources": [".././/packages/data-sources/src/index.ts"]
+    }
+  }
+}

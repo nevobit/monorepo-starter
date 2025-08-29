@@ -6,15 +6,41 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "release": "turbo release --concurrency=1",
+    "check-types": "turbo run check-types",
+    "prepare": "husky",
+    "lint:staged": "lint-staged",
+    "commitlint": "commitlint --from=HEAD~1 --to=HEAD"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
     "turbo": "^2.5.6",
-    "typescript": "5.9.2"
+    "typescript": "catalog:",
+    "typescript-eslint": "^8.41.0"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.5.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
+  },
+  "lint-staged": {
+    "apps/**/*.{ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/**/*.{ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*json": [
+      "prettier --write"
+    ]
   }
 }
