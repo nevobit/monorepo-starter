@@ -1,4 +1,4 @@
-export function canonicalJson(obj: unknown): string {
+export const canonicalJson = (obj: unknown): string => {
   const sort = (x: unknown): unknown => {
     if (Array.isArray(x)) {
       return x.map(sort);
