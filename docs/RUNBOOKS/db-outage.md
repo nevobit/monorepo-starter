@@ -2,7 +2,7 @@
 
 ## Overview
 
-This runbook provides step-by-step procedures for responding to and resolving database outages in the gtalla system.
+This runbook provides step-by-step procedures for responding to and resolving database outages in the {{projectName}} system.
 
 ## Severity Levels
 

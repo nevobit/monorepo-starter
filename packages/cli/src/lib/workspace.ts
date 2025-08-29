@@ -32,7 +32,7 @@ export async function writePkgJson(name: string, pkg: unknown) {
 }
 
 /**
- * Devuelve la raíz del repo (busca pnpm-workspace.yaml / turbo.json / package.json)
+ * Devuelve la raíz del {{packageName}} (busca pnpm-workspace.yaml / turbo.json / package.json)
  * subiendo directorios hasta /
  */
 export function repoRoot(start: string = process.cwd()): string {

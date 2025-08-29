@@ -1,5 +1,5 @@
 {
-  "name": "@repo/business-logic",
+  "name": "@{{packageName}}/business-logic",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -18,8 +18,8 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/contracts": "workspace:*",
+    "@{{packageName}}/typescript-config": "workspace:*",
+    "@{{packageName}}/contracts": "workspace:*",
     "@types/node": "^24.3.0",
     "tslib": "^2.8.1",
     "typescript": "catalog:",

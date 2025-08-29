@@ -1,6 +1,6 @@
 # Architecture Decisions
 
-This document tracks major architecture decisions for the Gtalla Monorepo.  
+This document tracks major architecture decisions for the {{projectName}} Monorepo.  
 Each entry follows the ADR format: **Context → Decision → Consequences**.
 
 ---
@@ -17,7 +17,7 @@ Adopt a **monorepo** powered by **pnpm workspaces** and **Turborepo** for build 
 
 - Single source of truth for dependencies and tooling.
 - Faster CI/CD through Turbo caching.
-- Larger repo size; requires discipline with boundaries.
+- Larger {{packageName}} size; requires discipline with boundaries.
 
 ---
 
@@ -33,7 +33,7 @@ Use **pnpm catalogs** (`catalog:` specifiers) to enforce consistent versions of 
 
 - Eliminates version drift across workspaces.
 - Centralized upgrade path.
-- Requires a custom CLI command (`repo install`) to enforce usage.
+- Requires a custom CLI command (`{{packageName}} install`) to enforce usage.
 
 ---
 
@@ -59,7 +59,7 @@ Create a **`packages/contracts`** library as the **single source of truth** for 
 Running `pnpm` or `turbo` commands directly is verbose and inconsistent across projects.
 
 **Decision**  
-Provide an **internal CLI** (`nevobit` or `sormi`) under `packages/cli` that wraps common commands:
+Provide an **internal CLI** (`{{packageName}}` or `{{packageName}}`) under `packages/cli` that wraps common commands:
 
 - `install` (dependency management via catalogs)
 - `build`, `dev`, `test`, `deploy`

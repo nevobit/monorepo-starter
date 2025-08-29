@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "catalog:",
     "react-dom": "^19.1.1",
-    "@repo/design-system": "workspace:*"
+    "@{{packageName}}/design-system": "workspace:*"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

@@ -2,22 +2,22 @@
 
 ## Overview
 
-This document provides comprehensive support information for the gtalla system, including contact details, troubleshooting guides, and common solutions.
+This document provides comprehensive support information for the {{projectName}} system, including contact details, troubleshooting guides, and common solutions.
 
 ## Contact Information
 
 ### Primary Support Channels
 
-- **Email**: support@gtalla.com
-- **Slack**: #gtalla-support
+- **Email**: support@{{projectName}}.com
+- **Slack**: #{{projectName}}-support
 - **Phone**: +1 (555) 123-4567 (24/7 for critical issues)
-- **Support Portal**: https://support.gtalla.com
+- **Support Portal**: https://support.{{projectName}}.com
 
 ### Escalation Contacts
 
-- **Technical Lead**: tech-lead@gtalla.com
-- **Engineering Manager**: eng-manager@gtalla.com
-- **CTO**: cto@gtalla.com
+- **Technical Lead**: tech-lead@{{projectName}}.com
+- **Engineering Manager**: eng-manager@{{projectName}}.com
+- **CTO**: cto@{{projectName}}.com
 
 ### On-Call Schedule
 
@@ -32,7 +32,7 @@ This document provides comprehensive support information for the gtalla system, 
 1. **Check the FAQ** section below for common solutions
 2. **Review the troubleshooting guides** for your specific issue
 3. **Gather relevant information** (error messages, logs, screenshots)
-4. **Check system status** at https://status.gtalla.com
+4. **Check system status** at https://status.{{projectName}}.com
 
 ### Information to Provide
 
@@ -221,18 +221,18 @@ A: Go to Account Settings > Profile and update your email address. You'll need t
 A: Modern web browser with JavaScript enabled, minimum 4GB RAM, stable internet connection.
 
 **Q: How do I check if the service is down?**
-A: Visit https://status.gtalla.com for real-time system status and incident updates.
+A: Visit https://status.{{projectName}}.com for real-time system status and incident updates.
 
 **Q: How do I report a bug?**
-A: Use the "Report Bug" feature in the application or email support@gtalla.com with detailed information.
+A: Use the "Report Bug" feature in the application or email support@{{projectName}}.com with detailed information.
 
 **Q: How do I request a new feature?**
-A: Submit feature requests through the support portal or email product@gtalla.com.
+A: Submit feature requests through the support portal or email product@{{projectName}}.com.
 
 ### Account and Billing
 
 **Q: How do I cancel my subscription?**
-A: Go to Account Settings > Billing > Cancel Subscription. Contact billing@gtalla.com for assistance.
+A: Go to Account Settings > Billing > Cancel Subscription. Contact billing@{{projectName}}.com for assistance.
 
 **Q: How do I update my billing information?**
 A: Navigate to Account Settings > Billing > Payment Methods to update your information.
@@ -324,7 +324,7 @@ A: Go to Account Settings > Billing > Invoices to download past invoices.
 
 For security-related issues:
 
-- **Email**: security@gtalla.com
+- **Email**: security@{{projectName}}.com
 - **Phone**: +1 (555) 123-4568
 - **Response**: Immediate (24/7)
 
@@ -332,7 +332,7 @@ For security-related issues:
 
 To report security vulnerabilities:
 
-1. Email security@gtalla.com
+1. Email security@{{projectName}}.com
 2. Include detailed description
 3. Provide proof of concept if possible
 4. Allow time for investigation before public disclosure
@@ -341,9 +341,9 @@ To report security vulnerabilities:
 
 ### Documentation
 
-- **User Guide**: https://docs.gtalla.com
-- **API Documentation**: https://api.gtalla.com/docs
-- **Developer Portal**: https://developers.gtalla.com
+- **User Guide**: https://docs.{{projectName}}.com
+- **API Documentation**: https://api.{{projectName}}.com/docs
+- **Developer Portal**: https://developers.{{projectName}}.com
 
 ### Training Materials
 
@@ -353,9 +353,9 @@ To report security vulnerabilities:
 
 ### Community
 
-- **User Forum**: https://community.gtalla.com
-- **Knowledge Base**: https://help.gtalla.com
-- **Blog**: https://blog.gtalla.com
+- **User Forum**: https://community.{{projectName}}.com
+- **Knowledge Base**: https://help.{{projectName}}.com
+- **Blog**: https://blog.{{projectName}}.com
 
 ## Feedback and Improvement
 
@@ -365,7 +365,7 @@ We value your feedback on our support services:
 
 - **Support Survey**: Sent after ticket resolution
 - **Feedback Form**: Available on support portal
-- **Direct Feedback**: Email feedback@gtalla.com
+- **Direct Feedback**: Email feedback@{{projectName}}.com
 
 ### Continuous Improvement
 

@@ -62,11 +62,11 @@
       "enabled": false
     },
     {
-      "matchPackagePatterns": ["^@gtalla/"],
+      "matchPackagePatterns": ["^@{{projectName}}/"],
       "enabled": false
     },
     {
-      "matchPackagePatterns": ["^@repo/"],
+      "matchPackagePatterns": ["^@{{packageName}}/"],
       "enabled": false
     },
     {
@@ -103,8 +103,8 @@
       "automerge": true
     }
   ],
-  "assignees": ["@gtalla/engineering"],
-  "reviewers": ["@gtalla/engineering"],
+  "assignees": ["@{{projectName}}/engineering"],
+  "reviewers": ["@{{projectName}}/engineering"],
   "labels": ["dependencies", "renovate"],
   "commitMessageAction": "Update",
   "commitMessageTopic": "{{depName}}",
@@ -137,8 +137,8 @@
   "vulnerabilityAlerts": {
     "enabled": true,
     "schedule": ["at any time"],
-    "assignees": ["@gtalla/security"],
-    "reviewers": ["@gtalla/security"],
+    "assignees": ["@{{projectName}}/security"],
+    "reviewers": ["@{{projectName}}/security"],
     "labels": ["security", "vulnerability", "renovate"],
     "commitMessageAction": "Fix",
     "commitMessageTopic": "{{depName}}",
@@ -181,7 +181,7 @@
   "osvVulnerabilitySummary": true,
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@gtalla/"],
+      "matchPackagePatterns": ["^@{{projectName}}/"],
       "enabled": false,
       "description": "Disable updates for internal packages"
     }

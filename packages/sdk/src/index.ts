@@ -7,7 +7,7 @@ export { createGraphQL } from "./graphql";
 
 export type {
     Plan, PlanLimits, FeatureFlag
-} from "@repo/contracts";
+} from "@{{packageName}}/contracts";
 
 export type Client = ReturnType<typeof createClient>;
 

@@ -7,7 +7,7 @@ export function registerSyncEnv(program: Command) {
     .description("Validate and copy .env.example → .env.local where missing.")
     .addHelpText("after", `
 Examples:
-  $ repo sync-env
+  $ {{packageName}} sync-env
 `)
     .action(async () => {
       await runPnpm(["sync-env"]);

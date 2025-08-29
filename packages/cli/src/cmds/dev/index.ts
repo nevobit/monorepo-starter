@@ -8,8 +8,8 @@ export function registerDev(program: Command) {
     .description("Start dev mode (turbo dev). Disables cache for live reload.")
     .addHelpText("after", `
 Examples:
-  $ repo dev
-  $ repo dev -f apps/rest
+  $ {{packageName}} dev
+  $ {{packageName}} dev -f apps/rest
 `)
     .action(async (opts: { filter?: string }) => {
       const args = ["run", "dev", "--no-cache"];

@@ -7,8 +7,8 @@ export function registerPull(program: Command) {
     .description("Pull latest changes for the current git branch")
     .addHelpText("after", `
 Examples:
-  $ repo pull
-  $ nevobit pull
+  $ {{packageName}} pull
+  $ {{packageName}} pull
 `)
     .action(() => {
       try {

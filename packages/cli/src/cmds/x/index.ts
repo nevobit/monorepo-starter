@@ -12,10 +12,10 @@ export function registerX(program: Command) {
     .addHelpText("after", `
 Examples:
   # Run vite inside apps/web
-  $ repo x web vite
+  $ {{packageName}} x web vite
 
   # Prisma generate in apps/rest
-  $ repo x rest prisma generate
+  $ {{packageName}} x rest prisma generate
 `)
     .action(async (ws: string, bin: string, args: string[] = []) => {
       await execa(bin, args, { cwd: wsPath(ws), stdio: "inherit" });

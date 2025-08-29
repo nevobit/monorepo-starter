@@ -1,6 +1,6 @@
-# Gtalla - Modern Application Platform
+# {{projectName}} - Modern Application Platform
 
-Gtalla is a comprehensive, modern application platform built with a monorepo architecture using Turborepo. It provides a scalable foundation for building and deploying applications across multiple platforms.
+{{projectName}} is a comprehensive, modern application platform built with a monorepo architecture using Turborepo. It provides a scalable foundation for building and deploying applications across multiple platforms.
 
 ## 🚀 Quick Start
 
@@ -14,8 +14,8 @@ Gtalla is a comprehensive, modern application platform built with a monorepo arc
 
 ```bash
 # Clone the repository
-git clone https://github.com/gtalla/gtalla.git
-cd gtalla
+git clone https://github.com/{{projectName}}/{{projectName}}.git
+cd {{projectName}}
 
 # Install dependencies
 pnpm install
@@ -31,7 +31,7 @@ pnpm dev
 ## 📁 Project Structure
 
 ```
-gtalla/
+{{projectName}}/
 ├── apps/                    # Applications
 │   ├── graphql/            # GraphQL API server
 │   ├── mobile/             # React Native mobile app
@@ -256,15 +256,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Documentation**: [docs.gtalla.com](https://docs.gtalla.com)
-- **Issues**: [GitHub Issues](https://github.com/gtalla/gtalla/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/gtalla/gtalla/discussions)
-- **Email**: support@gtalla.com
+- **Documentation**: [docs.{{projectName}}.com](https://docs.{{projectName}}.com)
+- **Issues**: [GitHub Issues](https://github.com/{{projectName}}/{{projectName}}/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/{{projectName}}/{{projectName}}/discussions)
+- **Email**: support@{{projectName}}.com
 
-## 🏢 About Gtalla
+## 🏢 About {{projectName}}
 
-Gtalla is a modern application platform designed for scalability, maintainability, and developer productivity. Our mission is to provide the best tools and practices for building robust applications.
+{{projectName}} is a modern application platform designed for scalability, maintainability, and developer productivity. Our mission is to provide the best tools and practices for building robust applications.
 
 ---
 
-**Built with ❤️ by the Gtalla Team**
+**Built with ❤️ by the {{projectName}} Team**

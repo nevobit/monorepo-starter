@@ -8,8 +8,8 @@ export function registerClean(program: Command) {
     .option("-f, --force", "skip confirmation")
     .addHelpText("after", `
 Examples:
-  $ repo clean
-  $ repo clean --force
+  $ {{packageName}} clean
+  $ {{packageName}} clean --force
 `)
     .action((opts: { force?: boolean }) => {
       const cmds = [

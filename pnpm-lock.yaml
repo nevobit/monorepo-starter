@@ -65,7 +65,7 @@ importers:
 
   apps/portal:
     dependencies:
-      '@repo/design-system':
+      '@{{packageName}}/design-system':
         specifier: workspace:*
         version: link:../../packages/design-system
       react:
@@ -123,16 +123,16 @@ importers:
       '@fastify/swagger-ui':
         specifier: ^5.2.3
         version: 5.2.3
-      '@repo/constant-definitions':
+      '@{{packageName}}/constant-definitions':
         specifier: workspace:*
         version: link:../../packages/constant-definitions
-      '@repo/core-modules':
+      '@{{packageName}}/core-modules':
         specifier: workspace:*
         version: link:../../packages/core-modules
-      '@repo/data-sources':
+      '@{{packageName}}/data-sources':
         specifier: workspace:*
         version: link:../../packages/data-sources
-      '@repo/security':
+      '@{{packageName}}/security':
         specifier: workspace:*
         version: link:../../packages/security
       dotenv:
@@ -148,7 +148,7 @@ importers:
         specifier: ^12.1.3
         version: 12.1.3
     devDependencies:
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/js-yaml':
@@ -169,10 +169,10 @@ importers:
 
   packages/business-logic:
     devDependencies:
-      '@repo/contracts':
+      '@{{packageName}}/contracts':
         specifier: workspace:*
         version: link:../contracts
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -206,7 +206,7 @@ importers:
         specifier: ^2.5.0
         version: 2.8.1
     devDependencies:
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/fs-extra':
@@ -221,10 +221,10 @@ importers:
 
   packages/constant-definitions:
     dependencies:
-      '@repo/core-modules':
+      '@{{packageName}}/core-modules':
         specifier: workspace:*
         version: link:../core-modules
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@simplyhexagonal/function-queue':
@@ -258,7 +258,7 @@ importers:
 
   packages/contracts:
     devDependencies:
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       tslib:
@@ -274,10 +274,10 @@ importers:
         specifier: ^0.12.5
         version: 0.12.5
     devDependencies:
-      '@repo/eslint-config':
+      '@{{packageName}}/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -292,10 +292,10 @@ importers:
 
   packages/data-sources:
     dependencies:
-      '@repo/constant-definitions':
+      '@{{packageName}}/constant-definitions':
         specifier: workspace:*
         version: link:../constant-definitions
-      '@repo/core-modules':
+      '@{{packageName}}/core-modules':
         specifier: workspace:*
         version: link:../core-modules
       '@simplyhexagonal/function-queue':
@@ -317,10 +317,10 @@ importers:
         specifier: ^8.16.3
         version: 8.16.3
     devDependencies:
-      '@repo/eslint-config':
+      '@{{packageName}}/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -345,7 +345,7 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^4.1.1
         version: 4.1.1(storybook@9.1.3(@testing-library/dom@10.4.1)(prettier@3.6.2)(vite@7.1.3(@types/node@24.3.0)(jiti@2.5.1)(tsx@4.20.5)(yaml@2.8.1)))
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@storybook/addon-a11y':
@@ -420,10 +420,10 @@ importers:
 
   packages/sdk:
     dependencies:
-      '@repo/contracts':
+      '@{{packageName}}/contracts':
         specifier: workspace:*
         version: link:../contracts
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       axios:
@@ -451,7 +451,7 @@ importers:
       '@aws-sdk/client-kms':
         specifier: ^3.876.0
         version: 3.876.0
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       argon2:
@@ -491,7 +491,7 @@ importers:
 
   packages/tools:
     devDependencies:
-      '@repo/typescript-config':
+      '@{{packageName}}/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':

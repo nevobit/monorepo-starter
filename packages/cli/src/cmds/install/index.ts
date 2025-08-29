@@ -13,17 +13,17 @@ export function registerInstall(program: Command) {
     .description("Install dependencies in workspace(s). Supports pnpm catalogs.")
     .addHelpText("after", `
 Examples:
-  # Install all deps in the repo
-  $ repo install
+  # Install all deps in the {{packageName}}
+  $ {{packageName}} install
 
   # Add react to apps/web using default catalog
-  $ repo install react web
+  $ {{packageName}} install react web
 
   # Add vitest as devDependency in apps/admin
-  $ repo install vitest admin -D
+  $ {{packageName}} install vitest admin -D
 
   # Add react using a named catalog "testing"
-  $ repo install react web -n testing
+  $ {{packageName}} install react web -n testing
 `)
     .action(async (pkg?: string, ws?: string, opts?: { dev: boolean, name: string }) => {
       if (!pkg && !ws) return runPnpm(["install", "-w"]);

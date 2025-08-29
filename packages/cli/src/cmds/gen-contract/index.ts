@@ -145,9 +145,9 @@ export function registerGenContract(program: Command) {
         .description("Generate contract files (schemas + dtos) and update models barrel")
         .addHelpText("after", `
 Examples:
-  $ repo gen-contract -n users
-  $ repo gen-contract -n blogPosts --mongo
-  $ repo gen-contract -n users --mongo --force
+  $ {{packageName}} gen-contract -n users
+  $ {{packageName}} gen-contract -n blogPosts --mongo
+  $ {{packageName}} gen-contract -n users --mongo --force
 `)
         .action(async (opts) => {
             await runGenContract(opts.name, opts);

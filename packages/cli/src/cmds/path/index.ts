@@ -8,8 +8,8 @@ export function registerPath(program: Command) {
     .description("Print absolute path for a workspace.")
     .addHelpText("after", `
 Examples:
-  $ repo path web
-  $ repo path packages/contracts
+  $ {{packageName}} path web
+  $ {{packageName}} path packages/contracts
 `)
     .action(async (ws: string) => {
       console.log(wsPath(ws));

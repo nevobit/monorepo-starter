@@ -8,8 +8,8 @@ export function registerTest(program: Command) {
     .description("Run tests via turbo (Vitest/Jest per workspace).")
     .addHelpText("after", `
 Examples:
-  $ repo test
-  $ repo test -f packages/ui
+  $ {{packageName}} test
+  $ {{packageName}} test -f packages/ui
 `)
     .action(async (opts: { filter?: string }) => {
       const args = ["run", "test"];

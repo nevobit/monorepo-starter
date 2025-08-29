@@ -22,25 +22,25 @@ export function registerSync(program: Command) {
     .command("sync")
     .description("Fetch + Pull current git branch and (optionally) install dependencies")
     .option("--no-install", "Skip pnpm install -w")
-    .option("--clean", "Run repo clean --force before installing")
+    .option("--clean", "Run {{packageName}} clean --force before installing")
     .option("--submodules", "Sync and update git submodules (recursive)")
     .option("--fast", "Shallow fetch (depth=1) and faster install (no frozen lock)")
     .addHelpText("after", `
 Examples:
   # Sync current branch and run pnpm install -w
-  $ repo sync
+  $ {{packageName}} sync
 
   # Pull changes without installing dependencies
-  $ repo sync --no-install
+  $ {{packageName}} sync --no-install
 
   # Clean caches/node_modules before installing
-  $ repo sync --clean
+  $ {{packageName}} sync --clean
 
   # Sync with submodules
-  $ repo sync --submodules
+  $ {{packageName}} sync --submodules
 
   # Fast mode: shallow fetch + faster install
-  $ repo sync --fast
+  $ {{packageName}} sync --fast
 `)
     .action(async (opts: {
       install?: boolean;   // default true
@@ -77,9 +77,9 @@ Examples:
 
         // 4) Clean (optional)
         if (opts.clean) {
-          console.log("➡️  repo clean --force");
+          console.log("➡️  {{packageName}} clean --force");
           try {
-            sh("repo clean --force");
+            sh("{{packageName}} clean --force");
           } catch {
             // fallback: manual clean
             sh("rm -rf common/deploy || true");
@@ -107,7 +107,7 @@ Examples:
 
         console.log("✅ Repo synchronized.");
       } catch (e) {
-        console.error("❌ repo sync failed:", e instanceof Error ? e.message : e);
+        console.error("❌ {{packageName}} sync failed:", e instanceof Error ? e.message : e);
         process.exit(1);
       }
     });

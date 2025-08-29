@@ -1,4 +1,4 @@
-import { Logger, MonoContext } from "@repo/core-modules";
+import { Logger, MonoContext } from "@{{packageName}}/core-modules";
 
 const LOGGER_KEY = `logger`;
 

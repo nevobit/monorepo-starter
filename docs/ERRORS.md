@@ -1,6 +1,6 @@
 # Error Codes
 
-This document defines **stable error codes** used across all APIs (REST, GraphQL, gRPC) and SDKs in the Gtalla Monorepo.  
+This document defines **stable error codes** used across all APIs (REST, GraphQL, gRPC) and SDKs in the {{projectName}} Monorepo.  
 Error codes are **consistent, machine-readable**, and must not change once published.
 
 ---

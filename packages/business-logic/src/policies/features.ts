@@ -1,4 +1,4 @@
-import type { FeatureFlag } from "@repo/contracts";
+import type { FeatureFlag } from "@{{packageName}}/contracts";
 
 export const planFeatures: Record<"free" | "pro" | "enterprise", FeatureFlag[]> = {
     free: [],

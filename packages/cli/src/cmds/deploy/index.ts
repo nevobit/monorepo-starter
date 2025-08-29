@@ -8,8 +8,8 @@ export function registerDeploy(program: Command) {
     .description("Run 'deploy' script via turbo for one or many workspaces.")
     .addHelpText("after", `
 Examples:
-  $ repo deploy
-  $ repo deploy -f apps/site
+  $ {{packageName}} deploy
+  $ {{packageName}} deploy -f apps/site
 `)
     .action(async (opts: { filter?: string }) => {
       const args = ["run", "deploy"];

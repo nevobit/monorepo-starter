@@ -1,4 +1,4 @@
-import type { Plan, PlanLimits } from "@repo/contracts";
+import type { Plan, PlanLimits } from "@{{packageName}}/contracts";
 
 export const planLimits: Record<Plan, PlanLimits> = {
   free: {

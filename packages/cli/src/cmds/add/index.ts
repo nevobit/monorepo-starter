@@ -13,13 +13,13 @@ export function registerAdd(program: Command) {
     .addHelpText("after", `
 Examples:
   # Add a runtime dep
-  $ repo add axios rest
+  $ {{packageName}} add axios rest
 
   # Add a devDependency
-  $ repo add vitest admin -D
+  $ {{packageName}} add vitest admin -D
 
   # Add using named catalog
-  $ repo add react web -n testing
+  $ {{packageName}} add react web -n testing
 `)
     .action(async (dep: string, ws: string, opts: { dev: boolean, name: string }) => {
       await addCatalogSpec(ws, dep, { dev: !!opts?.dev, name: opts?.name });

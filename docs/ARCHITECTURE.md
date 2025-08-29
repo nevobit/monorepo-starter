@@ -33,7 +33,7 @@ apps/ → Applications (end-user and backend)
 └─ graphql → GraphQL API service
 
 packages/ → Shared libraries and modules
-├─ cli → Developer CLI (nevobit / sormi)
+├─ cli → Developer CLI ({{packageName}} / {{packageName}})
 ├─ contracts → Shared contracts, types, error codes
 ├─ sdk → SDK for external and internal clients
 ├─ ui → Component library / design system
@@ -92,7 +92,7 @@ docs/ → Architecture, decisions, errors, runbooks
   Cross-cutting concerns such as logging, observability, authentication, and configuration.
 
 - **CLI**  
-  Internal developer CLI (`nevobit` or `sormi`) with commands such as:
+  Internal developer CLI (`{{packageName}}` or `{{packageName}}`) with commands such as:
   - `install` (dependency management via pnpm catalogs)
   - `build`, `dev`, `test` (turborepo tasks)
   - `sync-env`, `preflight`, `kill-ports`, `gen` (DX helpers)

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This runbook provides procedures for rolling back deployments when issues are detected in production, staging, or other environments in the gtalla system.
+This runbook provides procedures for rolling back deployments when issues are detected in production, staging, or other environments in the {{projectName}} system.
 
 ## Severity Levels
 
@@ -173,7 +173,7 @@ aws lambda update-alias \
 # Example automated rollback script
 
 # Set variables
-DEPLOYMENT_NAME="gtalla-api"
+DEPLOYMENT_NAME="{{projectName}}-api"
 PREVIOUS_VERSION="v1.2.3"
 CURRENT_VERSION="v1.2.4"
 

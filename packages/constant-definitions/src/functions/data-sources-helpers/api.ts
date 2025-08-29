@@ -1,4 +1,4 @@
-import { MonoContext } from '@repo/core-modules';
+import { MonoContext } from '@{{packageName}}/core-modules';
 import { DATA_SOURCES_KEY } from './constants';
 import {
     AxiosRequestConfig,

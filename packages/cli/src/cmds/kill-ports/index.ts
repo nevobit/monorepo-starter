@@ -8,8 +8,8 @@ export function registerKillPorts(program: Command) {
     .description("Free TCP ports across platforms.")
     .addHelpText("after", `
 Examples:
-  $ repo kill-ports
-  $ repo kill-ports 5173 4001
+  $ {{packageName}} kill-ports
+  $ {{packageName}} kill-ports 5173 4001
 `)
     .action(async (...args: string[]) => {
       const ports = (args as string[]).flat().filter(Boolean);

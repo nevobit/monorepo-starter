@@ -1,5 +1,5 @@
 {
-  "name": "gtalla",
+  "name": "{{projectName}}",
   "private": true,
   "scripts": {
     "build": "turbo run build",

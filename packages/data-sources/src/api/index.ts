@@ -8,7 +8,7 @@ import FunctionQueue, {
   FunctionQueueResult,
   QueueableFunction,
 } from "@simplyhexagonal/function-queue";
-import { MonoContext } from "@repo/core-modules";
+import { MonoContext } from "@{{packageName}}/core-modules";
 import * as crypto from 'crypto';
 
 export interface InitApiOptions {

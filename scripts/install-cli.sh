@@ -8,13 +8,13 @@ set -euo pipefail
 # Uso:
 #   ./scripts/install-cli.sh                 # build + pack + npm i -g <tarball>
 #   ./scripts/install-cli.sh --link          # build + npm link (global)
-#   ./scripts/install-cli.sh --uninstall     # npm rm -g @repo/cli
+#   ./scripts/install-cli.sh --uninstall     # npm rm -g @{{packageName}}/cli
 #   ./scripts/install-cli.sh --dry-run       # solo mostrar acciones
 #   ./scripts/install-cli.sh --force         # sin confirmaciones
 # ------------------------------------------------------------------------------
 
 CLI_PKG_DIR="packages/cli"
-PKG_NAME="@repo/cli"   # cambia si tu package tiene otro nombre
+PKG_NAME="@{{packageName}}/cli"   # cambia si tu package tiene otro nombre
 
 DO_LINK="false"
 DO_UNINSTALL="false"
@@ -100,7 +100,7 @@ if [ "$MODE" = "link" ] || [ "$DO_LINK" = "true" ]; then
   say "Linking CLI globally using npm link ..."
   if confirm "Proceed with 'npm link' inside $CLI_PKG_DIR?"; then
     run "cd \"$CLI_PKG_DIR\" && npm link"
-    say "✅ Linked globally. Prueba:  repo --help   (o: nevobit --help, sormi --help)"
+    say "✅ Linked globally. Prueba:  {{packageName}} --help   (o: {{packageName}} --help, {{packageName}} --help)"
   else
     warn "Aborted."
   fi
@@ -122,7 +122,7 @@ ABS_TARBALL="$CLI_PKG_DIR/$(basename "$TARBALL_PATH")"
 say "Installing tarball globally with npm i -g ..."
 if confirm "Install $ABS_TARBALL globally via npm?"; then
   run "npm i -g \"$ABS_TARBALL\""
-  say "✅ Installed globally. try:  repo --help"
+  say "✅ Installed globally. try:  {{packageName}} --help"
   rm -f "$ABS_TARBALL"
   say "🧹 Tarball $ABS_TARBALL deleted"
 

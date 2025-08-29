@@ -1,5 +1,5 @@
 {
-  "name": "@repo/sdk",
+  "name": "@{{packageName}}/sdk",
   "version": "0.1.0",
   "type": "module",
   "description": "Official SDK for the API (REST/GraphQL) — functional, fetch-based.",
@@ -29,8 +29,8 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@repo/contracts": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@{{packageName}}/contracts": "workspace:*",
+    "@{{packageName}}/typescript-config": "workspace:*",
     "axios": "^1.11.0"
   },
   "devDependencies": {

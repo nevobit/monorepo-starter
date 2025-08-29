@@ -1,5 +1,5 @@
 {
-  "name": "@repo/security",
+  "name": "@{{packageName}}/security",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -27,7 +27,7 @@
   "packageManager": "pnpm@10.5.0",
   "dependencies": {
     "@aws-sdk/client-kms": "^3.876.0",
-    "@repo/typescript-config": "workspace:*",
+    "@{{packageName}}/typescript-config": "workspace:*",
     "argon2": "^0.44.0",
     "crypto": "^1.0.1",
     "ioredis": "^5.7.0",

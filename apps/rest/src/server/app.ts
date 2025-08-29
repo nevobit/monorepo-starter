@@ -3,10 +3,10 @@ import fastifyCors from "@fastify/cors";
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import fastifyMultipart from "@fastify/multipart";
-import type { Logger } from "@repo/core-modules";
+import type { Logger } from "@{{packageName}}/core-modules";
 import { version, name } from "../../package.json";
 import os from "os";
-import { verify, mapVerifyCode } from "@repo/security";
+import { verify, mapVerifyCode } from "@{{packageName}}/security";
 
 type SwaggerOpts = Parameters<typeof fastifySwagger>[1];
 type SwaggerUiOpts = Parameters<typeof fastifySwaggerUi>[1];

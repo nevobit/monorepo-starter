@@ -56,7 +56,7 @@ export default {
         'infra',
         'k8s',
         'terraform',
-        'repo',
+        '{{packageName}}',
         'deps'
       ]
     ],

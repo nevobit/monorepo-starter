@@ -2,7 +2,7 @@
 
 ## Overview
 
-This runbook provides procedures for responding to cache miss spikes that can cause performance degradation and increased database load in the gtalla system.
+This runbook provides procedures for responding to cache miss spikes that can cause performance degradation and increased database load in the {{projectName}} system.
 
 ## Severity Levels
 

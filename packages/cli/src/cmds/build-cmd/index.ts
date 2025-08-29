@@ -5,11 +5,11 @@ export function registerBuild(program: Command) {
   program
     .command("build")
     .option("-f, --filter <workspace>", "filter workspace (e.g. apps/web)")
-    .description("Run turbo build across the repo or for a single workspace.")
+    .description("Run turbo build across the {{packageName}} or for a single workspace.")
     .addHelpText("after", `
 Examples:
-  $ repo build
-  $ repo build -f apps/web
+  $ {{packageName}} build
+  $ {{packageName}} build -f apps/web
 `)
     .action(async (opts: { filter?: string }) => {
       const args = ["run", "build"];

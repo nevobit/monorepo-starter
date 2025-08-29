@@ -19,17 +19,17 @@
     "tsx": "^4.20.5",
     "typescript": "catalog:",
     "vitest": "^3.2.4",
-    "@repo/typescript-config": "workspace:*"
+    "@{{packageName}}/typescript-config": "workspace:*"
   },
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "@fastify/multipart": "^9.0.3",
     "@fastify/swagger": "^9.5.1",
     "@fastify/swagger-ui": "^5.2.3",
-    "@repo/core-modules": "workspace:*",
-    "@repo/data-sources": "workspace:*",
-    "@repo/constant-definitions": "workspace:*",
-    "@repo/security": "workspace:*",
+    "@{{packageName}}/core-modules": "workspace:*",
+    "@{{packageName}}/data-sources": "workspace:*",
+    "@{{packageName}}/constant-definitions": "workspace:*",
+    "@{{packageName}}/security": "workspace:*",
     "dotenv": "^17.2.1",
     "fastify": "catalog:",
     "js-yaml": "^4.1.0",

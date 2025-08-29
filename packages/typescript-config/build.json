@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/typescript-config/base",
+  "extends": "@{{packageName}}/typescript-config/base",
   "compilerOptions": {
     "declaration": true,
     "declarationMap": true,

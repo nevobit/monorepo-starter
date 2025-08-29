@@ -1,5 +1,5 @@
 {
-  "name": "@repo/constant-definitions",
+  "name": "@{{packageName}}/constant-definitions",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.ts",
@@ -11,8 +11,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.5.0",
   "dependencies": {
-    "@repo/core-modules": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@{{packageName}}/core-modules": "workspace:*",
+    "@{{packageName}}/typescript-config": "workspace:*",
     "@simplyhexagonal/function-queue": "^2.0.0",
     "axios": "^1.11.0",
     "drizzle-orm": "^0.44.5",

@@ -2,7 +2,7 @@ import { Command } from "commander";
 import { registerInstall } from "./cmds/install";
 import { registerAdd } from "./cmds/add";
 import { registerUpdate } from "./cmds/update";
-import { registerBuild } from "./cmds/build";
+import { registerBuild } from "./cmds/build-cmd";
 import { registerDev } from "./cmds/dev";
 import { registerTest } from "./cmds/test";
 import { registerDeploy } from "./cmds/deploy";
@@ -21,7 +21,7 @@ import { registerGenContract } from "./cmds/gen-contract";
 
 
 const program = new Command();
-program.name("repo").description("Monorepo CLI").version("0.5.0");
+program.name("{{packageName}}").description("Monorepo CLI").version("0.5.0");
 
 registerInstall(program);
 registerAdd(program);

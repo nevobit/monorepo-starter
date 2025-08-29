@@ -1,4 +1,4 @@
-# @repo/sdk
+# @{{packageName}}/sdk
 
 Official SDK for the API. Functional, `fetch`-based, works on **web**, **node**, and **react-native**.
 
@@ -7,5 +7,5 @@ Official SDK for the API. Functional, `fetch`-based, works on **web**, **node**,
 Workspace usage:
 
 ```bash
-pnpm --filter @repo/sdk build
+pnpm --filter @{{packageName}}/sdk build
 ```

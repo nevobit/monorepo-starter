@@ -6,12 +6,12 @@ import {
   Logger,
   LoggerTransportName,
   MonoContext,
-} from "@repo/core-modules";
-import { setLogger } from "@repo/constant-definitions";
+} from "@{{packageName}}/core-modules";
+import { setLogger } from "@{{packageName}}/constant-definitions";
 import { swaggerOptions, swaggerUiOptions } from "../docs";
 import { buildApp } from "./app";
 import { registerRoutes } from "@/routes";
-import { initDataSources } from '@repo/data-sources';
+import { initDataSources } from '@{{packageName}}/data-sources';
 
 const { env } = process
 

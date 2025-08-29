@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/typescript-config/dev.json",
+  "extends": "@{{packageName}}/typescript-config/dev.json",
   "include": ["src"],
   "exclude": ["dist", "node_modules"]
 }

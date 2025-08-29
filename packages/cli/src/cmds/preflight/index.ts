@@ -7,7 +7,7 @@ export function registerPreflight(program: Command) {
     .description("Check Node, pnpm, Vercel CLI, AWS CLI versions before running.")
     .addHelpText("after", `
 Examples:
-  $ repo preflight
+  $ {{packageName}} preflight
 `)
     .action(async () => {
       await runPnpm(["preflight"]);

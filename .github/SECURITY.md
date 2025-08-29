@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the security policies, procedures, and best practices for the gtalla system. We are committed to maintaining the highest standards of security and protecting our users' data.
+This document outlines the security policies, procedures, and best practices for the {{projectName}} system. We are committed to maintaining the highest standards of security and protecting our users' data.
 
 ## Supported Versions
 
@@ -20,8 +20,8 @@ We appreciate security researchers and users who report vulnerabilities to us. W
 
 ### How to Report
 
-1. **Email**: security@gtalla.com
-2. **PGP Key**: [Download our public key](https://gtalla.com/security/pgp-key.asc)
+1. **Email**: security@{{projectName}}.com
+2. **PGP Key**: [Download our public key](https://{{projectName}}.com/security/pgp-key.asc)
 3. **Encrypted Communication**: Use our PGP key for sensitive information
 
 ### What to Include
@@ -192,14 +192,14 @@ When reporting a vulnerability, please provide:
 
 ### Primary Security Team
 
-- **Security Lead**: security-lead@gtalla.com
-- **CISO**: ciso@gtalla.com
-- **Security Operations**: secops@gtalla.com
+- **Security Lead**: security-lead@{{projectName}}.com
+- **CISO**: ciso@{{projectName}}.com
+- **Security Operations**: secops@{{projectName}}.com
 
 ### Emergency Contacts
 
 - **24/7 Security Hotline**: +1 (555) 123-4569
-- **Incident Response**: incident@gtalla.com
+- **Incident Response**: incident@{{projectName}}.com
 
 ### External Security Partners
 
@@ -211,21 +211,21 @@ When reporting a vulnerability, please provide:
 
 ### Documentation
 
-- [Security Architecture](https://docs.gtalla.com/security/architecture)
-- [Secure Development Guide](https://docs.gtalla.com/security/development)
-- [Incident Response Playbook](https://docs.gtalla.com/security/incident-response)
+- [Security Architecture](https://docs.{{projectName}}.com/security/architecture)
+- [Secure Development Guide](https://docs.{{projectName}}.com/security/development)
+- [Incident Response Playbook](https://docs.{{projectName}}.com/security/incident-response)
 
 ### Tools and Services
 
-- [Security Dashboard](https://security.gtalla.com)
-- [Vulnerability Management](https://vuln.gtalla.com)
-- [Security Training Portal](https://training.gtalla.com)
+- [Security Dashboard](https://security.{{projectName}}.com)
+- [Vulnerability Management](https://vuln.{{projectName}}.com)
+- [Security Training Portal](https://training.{{projectName}}.com)
 
 ### Community
 
-- [Security Blog](https://blog.gtalla.com/security)
-- [Security Advisories](https://gtalla.com/security/advisories)
-- [Security Forum](https://community.gtalla.com/security)
+- [Security Blog](https://blog.{{projectName}}.com/security)
+- [Security Advisories](https://{{projectName}}.com/security/advisories)
+- [Security Forum](https://community.{{projectName}}.com/security)
 
 ## Security Metrics and Reporting
 
@@ -261,4 +261,4 @@ When reporting a vulnerability, please provide:
 
 **Last Updated**: December 2024
 **Next Review**: June 2025
-**Contact**: security@gtalla.com
+**Contact**: security@{{projectName}}.com

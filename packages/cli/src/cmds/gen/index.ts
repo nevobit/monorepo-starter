@@ -7,7 +7,7 @@ export function registerGen(program: Command) {
     .description("Orchestrate code generation (GraphQL/OpenAPI) across workspaces.")
     .addHelpText("after", `
 Examples:
-  $ repo gen
+  $ {{packageName}} gen
 `)
     .action(async () => {
       await runPnpm(["gen"]);

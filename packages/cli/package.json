@@ -1,9 +1,9 @@
 {
-  "name": "@repo/cli",
+  "name": "@{{packageName}}/cli",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "repo": "dist/index.js"
+    "{{packageName}}": "dist/index.js"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
@@ -22,7 +22,7 @@
     "yaml": "^2.5.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@{{packageName}}/typescript-config": "workspace:*",
     "@types/fs-extra": "^11.0.4",
     "tsup": "8.0.1",
     "typescript": "catalog:"

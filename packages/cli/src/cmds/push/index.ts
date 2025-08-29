@@ -18,8 +18,8 @@ export function registerPush(program: Command) {
     .option("-f, --force", "Force push (--force-with-lease)")
     .addHelpText("after", `
 Examples:
-  $ repo push
-  $ repo push --force
+  $ {{packageName}} push
+  $ {{packageName}} push --force
 `)
     .action((opts: { force?: boolean }) => {
       try {
@@ -37,7 +37,7 @@ Examples:
         execSync(cmd, { stdio: "inherit" });
         console.log(`✅ Pushed branch ${branch} to origin`);
       } catch (e) {
-        console.error("❌ repo push failed:", e instanceof Error ? e.message : e);
+        console.error("❌ {{packageName}} push failed:", e instanceof Error ? e.message : e);
         process.exit(1);
       }
     });
